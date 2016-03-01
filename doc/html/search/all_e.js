@@ -5,7 +5,6 @@ var searchData=
   ['parse',['parse',['../d5/d38/class_o_s_r_e_1_1_i_o_1_1_uri.html#a200027b2585e90333e5846ee9a7feedf',1,'OSRE::IO::Uri']]],
   ['parseargparameter',['parseArgParameter',['../d9/d1f/class_o_s_r_e_1_1_common_1_1_argument_parser.html#a3f2f5ca272cb36972416d69f309f8dd5',1,'OSRE::Common::ArgumentParser']]],
   ['platform',['Platform',['../d0/dec/class_o_s_r_e_1_1_platform_1_1_system_info.html#a59083677a7b5efa0455de6ff02f5f471',1,'OSRE::Platform::SystemInfo']]],
-  ['platforminterface',['PlatformInterface',['../d8/d34/class_1_1_o_s_r_e_1_1_platform_1_1_platform_interface.html',1,'OSRE::Platform']]],
   ['platforminterface',['PlatformInterface',['../dd/d2f/class_o_s_r_e_1_1_platform_1_1_platform_interface.html',1,'OSRE::Platform']]],
   ['platformplugin',['PlatformPlugin',['../dc/df6/class_o_s_r_e_1_1_properties_1_1_settings.html#a243791121327ab8410d071032bcad6fea7c602edf06bc88cb0530ad896e2cdfe2',1,'OSRE::Properties::Settings']]],
   ['pollingmode',['PollingMode',['../dc/df6/class_o_s_r_e_1_1_properties_1_1_settings.html#a243791121327ab8410d071032bcad6feadb5bd42a5d6034f8771ff38ad48784a8',1,'OSRE::Properties::Settings']]],
@@ -17,6 +16,5 @@ var searchData=
   ['printmode',['PrintMode',['../d5/d2b/class_o_s_r_e_1_1_common_1_1_logger.html#a282c7e37ba26502cef80c46a19b4b7c9',1,'OSRE::Common::Logger']]],
   ['priority',['Priority',['../dc/d43/class_o_s_r_e_1_1_platform_1_1_abstract_thread.html#ae8796b4249f546a4a04b7a0983e6c7ee',1,'OSRE::Platform::AbstractThread']]],
   ['processevents',['processEvents',['../dc/d71/class_o_s_r_e_1_1_platform_1_1_abstract_platform_event_handler.html#add4d22f63878cf03d6c2b0c2a9dd1bea',1,'OSRE::Platform::AbstractPlatformEventHandler']]],
-  ['property',['Property',['../db/d9f/class_o_s_r_e_1_1_properties_1_1_property.html',1,'OSRE::Properties']]],
-  ['property',['Property',['../d7/dbe/class_1_1_o_s_r_e_1_1_properties_1_1_property.html',1,'OSRE::Properties']]]
+  ['property',['Property',['../db/d9f/class_o_s_r_e_1_1_properties_1_1_property.html',1,'OSRE::Properties']]]
 ];

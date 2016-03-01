@@ -1,7 +1,6 @@
 var searchData=
 [
   ['datetime',['DateTime',['../d4/dc7/class_o_s_r_e_1_1_common_1_1_date_time.html',1,'OSRE::Common']]],
-  ['datetime',['DateTime',['../d0/d76/class_1_1_o_s_r_e_1_1_common_1_1_date_time.html',1,'OSRE::Common']]],
   ['datetime',['DateTime',['../d4/dc7/class_o_s_r_e_1_1_common_1_1_date_time.html#acd913358a6ce5eb5b005455b805748c6',1,'OSRE::Common::DateTime::DateTime()'],['../d4/dc7/class_o_s_r_e_1_1_common_1_1_date_time.html#abfdc06ba6474cfee19edbe444c8d0ded',1,'OSRE::Common::DateTime::DateTime(ui32 year, ui32 month, ui32 day, ui32 hour, ui32 minute, ui32 seconds, ui32 ms)']]],
   ['debug',['Debug',['../d5/d2b/class_o_s_r_e_1_1_common_1_1_logger.html#afa4e1c258f27d28c9d40153632792314a939605b0ca72b80ed1fd263514437134',1,'OSRE::Common::Logger::Debug()'],['../d5/d2b/class_o_s_r_e_1_1_common_1_1_logger.html#a0fd12e1c53b34e83e77deb7611edd6c2',1,'OSRE::Common::Logger::debug(const String &amp;domain, const String &amp;msg)']]],
   ['dec',['dec',['../d0/daa/class_o_s_r_e_1_1_platform_1_1_abstract_atomic.html#a9daf7cdccbf3b6531e62d6007df66299',1,'OSRE::Platform::AbstractAtomic']]],

@@ -95,6 +95,11 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">OSRE::Common::EventTriggerer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class to trigger events.  
+ <a href="../../d1/df4/class_o_s_r_e_1_1_common_1_1_event_triggerer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d5e/_event_triggerer_8h_source.html">EventTriggerer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,7 +140,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <tr class="memdesc:a6743d6441716199cf9184cfa5f68cdea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all added events. <br /></td></tr>
 <tr class="separator:a6743d6441716199cf9184cfa5f68cdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class to trigger events. </p>
+<p>You can register a listener, which will get update callbacks if the related event was fired. You can also register a listener to a bundle of events. The event trigger will use a simple functor as a listener implementation. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa528d5a4bc2d5226645d49bba7f286c9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +247,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 <p>Remove all listener from the trigger. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ev</td><td><a class="el" href="../../d9/d16/struct_o_s_r_e_1_1_common_1_1_event.html">Event</a> which triggers are connected to. </td></tr>
+    <tr><td class="paramname">ev</td><td><a class="el" href="../../d9/d16/struct_o_s_r_e_1_1_common_1_1_event.html" title="The base class of osre-events, describes type of an event. To create your own events it is possible t...">Event</a> which triggers are connected to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,7 +333,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../.
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/projects/osre/include/osre/Common/<a class="el" href="../../d6/d5e/_event_triggerer_8h_source.html">EventTriggerer.h</a></li>
+<li>D:/projects/osre_doc/include/osre/Common/<a class="el" href="../../d6/d5e/_event_triggerer_8h_source.html">EventTriggerer.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

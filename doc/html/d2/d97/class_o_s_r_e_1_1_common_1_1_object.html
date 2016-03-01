@@ -96,21 +96,26 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">OSRE::Common::Object Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This base-class implements a simple reference counting. To get an ownership call get, to release it call release. Objects with a reference count of 0 will be destroyed. You can assign an object name to the instance.  
+ <a href="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d30/_object_8h_source.html">Object.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OSRE::Common::Object:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.png" usemap="#OSRE::Common::Object_map" alt=""/>
   <map id="OSRE::Common::Object_map" name="OSRE::Common::Object_map">
-<area href="../../d2/d58/class_o_s_r_e_1_1_common_1_1_abstract_service.html" alt="OSRE::Common::AbstractService" shape="rect" coords="245,56,480,80"/>
-<area href="../../db/d78/class_o_s_r_e_1_1_platform_1_1_abstract_thread_factory.html" alt="OSRE::Platform::AbstractThreadFactory" shape="rect" coords="245,112,480,136"/>
-<area href="../../d0/d70/class_o_s_r_e_1_1_platform_1_1_abstract_timer.html" alt="OSRE::Platform::AbstractTimer" shape="rect" coords="245,168,480,192"/>
-<area href="../../de/d02/class_o_s_r_e_1_1_platform_1_1_o_s_event_listener.html" alt="OSRE::Platform::OSEventListener" shape="rect" coords="245,224,480,248"/>
+<area href="../../d2/d58/class_o_s_r_e_1_1_common_1_1_abstract_service.html" title="This class is the base interface for all server classes. A server provides services like a render int..." alt="OSRE::Common::AbstractService" shape="rect" coords="245,56,480,80"/>
+<area href="../../db/d78/class_o_s_r_e_1_1_platform_1_1_abstract_thread_factory.html" title="This abstract interface declares the factory methods for any thread implementation. " alt="OSRE::Platform::AbstractThreadFactory" shape="rect" coords="245,112,480,136"/>
+<area href="../../d0/d70/class_o_s_r_e_1_1_platform_1_1_abstract_timer.html" title="This class declares the abstract interface for timer implementations. " alt="OSRE::Platform::AbstractTimer" shape="rect" coords="245,168,480,192"/>
+<area href="../../de/d02/class_o_s_r_e_1_1_platform_1_1_o_s_event_listener.html" title="This class declares the abstract interface for all operation system events. You can use it to get not..." alt="OSRE::Platform::OSEventListener" shape="rect" coords="245,224,480,248"/>
 <area href="../../d9/d05/class_o_s_r_e_1_1_render_backend_1_1_font_base.html" alt="OSRE::RenderBackend::FontBase" shape="rect" coords="245,280,480,304"/>
 <area href="../../d6/dc0/class_o_s_r_e_1_1_scene_1_1_node.html" alt="OSRE::Scene::Node" shape="rect" coords="245,336,480,360"/>
 <area href="../../d1/df9/class_o_s_r_e_1_1_scene_1_1_stage.html" alt="OSRE::Scene::Stage" shape="rect" coords="245,392,480,416"/>
 <area href="../../d7/d46/class_o_s_r_e_1_1_scene_1_1_view.html" alt="OSRE::Scene::View" shape="rect" coords="245,448,480,472"/>
-<area href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" alt="OSRE::Threading::AbstractTask" shape="rect" coords="245,504,480,528"/>
+<area href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik..." alt="OSRE::Threading::AbstractTask" shape="rect" coords="245,504,480,528"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -144,7 +149,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:acb939840237b8d5d3f1ccd83fd76df88"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor with the name of the object.  <a href="#acb939840237b8d5d3f1ccd83fd76df88">More...</a><br /></td></tr>
 <tr class="separator:acb939840237b8d5d3f1ccd83fd76df88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This base-class implements a simple reference counting. To get an ownership call get, to release it call release. Objects with a reference count of 0 will be destroyed. You can assign an object name to the instance. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="acb939840237b8d5d3f1ccd83fd76df88"></a>
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +246,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/projects/osre/include/osre/Common/<a class="el" href="../../df/d30/_object_8h_source.html">Object.h</a></li>
+<li>D:/projects/osre_doc/include/osre/Common/<a class="el" href="../../df/d30/_object_8h_source.html">Object.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

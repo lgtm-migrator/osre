@@ -28,6 +28,6 @@ var searchData=
   ['atomicint',['AtomicInt',['../df/d12/class_o_s_r_e_1_1_platform_1_1_atomic_int.html#ac64452bd928486dc490bd739321587d4',1,'OSRE::Platform::AtomicInt']]],
   ['attach',['attach',['../d8/d7e/class_o_s_r_e_1_1_common_1_1_abstract_event_handler.html#a92a10c67c02fec996af5a8ee4af86ec7',1,'OSRE::Common::AbstractEventHandler']]],
   ['attacheventhandler',['attachEventHandler',['../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#ae26da774fb460becca985ab016623b82',1,'OSRE::Threading::SystemTask']]],
-  ['await',['await',['../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#af16d386ff7a4bccd28a40ecec672865e',1,'OSRE::Threading::AbstractTask::await()'],['../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#a925691d94fb68258ea0f9b393df9a30f',1,'OSRE::Threading::SystemTask::await()']]],
-  ['awaitenqueueditem',['awaitEnqueuedItem',['../dc/d4d/class_o_s_r_e_1_1_threading_1_1_t_async_queue.html#a8847d39560fe1a026f112ea51d4c0bf7',1,'OSRE::Threading::TAsyncQueue']]]
+  ['awaitenqueueditem',['awaitEnqueuedItem',['../dc/d4d/class_o_s_r_e_1_1_threading_1_1_t_async_queue.html#a8847d39560fe1a026f112ea51d4c0bf7',1,'OSRE::Threading::TAsyncQueue']]],
+  ['awaitupdate',['awaitUpdate',['../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#ae914ed635e1736901d91a41daa20725e',1,'OSRE::Threading::AbstractTask::awaitUpdate()'],['../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#ad61e8c4c286aa6c4ce4a2de5884349e7',1,'OSRE::Threading::SystemTask::awaitUpdate()']]]
 ];

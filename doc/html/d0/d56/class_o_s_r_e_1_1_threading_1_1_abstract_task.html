@@ -97,14 +97,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">OSRE::Threading::AbstractTask Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This abstract interface-class declares a task. Tasks can be used to handle several component jobs like streaming resource loader requests or the rendering. A task can work as a sequence. Then he will be started in the main thread context. Or the task can be started in a separate thread. You can install an own thread instance as well. To implement the behavior of the task you can install event-handlers. Each event with its data will be managed by a task job. TaskJobs will be queued and handled one after another. You can specify your own setup-method, if you want to add your own setup code.  
+ <a href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../da/d22/_abstract_task_8h_source.html">AbstractTask.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OSRE::Threading::AbstractTask:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.png" usemap="#OSRE::Threading::AbstractTask_map" alt=""/>
   <map id="OSRE::Threading::AbstractTask_map" name="OSRE::Threading::AbstractTask_map">
-<area href="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.html" alt="OSRE::Common::Object" shape="rect" coords="0,0,188,24"/>
-<area href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html" alt="OSRE::Threading::SystemTask" shape="rect" coords="0,112,188,136"/>
+<area href="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.html" title="This base-class implements a simple reference counting. To get an ownership call get, to release it call release. Objects with a reference count of 0 will be destroyed. You can assign an object name to the instance. " alt="OSRE::Common::Object" shape="rect" coords="0,0,188,24"/>
+<area href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html" title="This class implements a system task. " alt="OSRE::Threading::SystemTask" shape="rect" coords="0,112,188,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -155,10 +160,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=".
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#a2f2cde1212ec184a296f6452ef2087a1">onUpdate</a> ()=0</td></tr>
 <tr class="memdesc:a2f2cde1212ec184a296f6452ef2087a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The update callback. <br /></td></tr>
 <tr class="separator:a2f2cde1212ec184a296f6452ef2087a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af16d386ff7a4bccd28a40ecec672865e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af16d386ff7a4bccd28a40ecec672865e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#af16d386ff7a4bccd28a40ecec672865e">await</a> ()=0</td></tr>
-<tr class="memdesc:af16d386ff7a4bccd28a40ecec672865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awaits an incoming signal. <br /></td></tr>
-<tr class="separator:af16d386ff7a4bccd28a40ecec672865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae914ed635e1736901d91a41daa20725e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae914ed635e1736901d91a41daa20725e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#ae914ed635e1736901d91a41daa20725e">awaitUpdate</a> ()=0</td></tr>
+<tr class="memdesc:ae914ed635e1736901d91a41daa20725e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Awaits an incoming signal. <br /></td></tr>
+<tr class="separator:ae914ed635e1736901d91a41daa20725e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6978fcf660d7d52003a21c4d0ccc4c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6978fcf660d7d52003a21c4d0ccc4c4f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>awaitStop</b> ()=0</td></tr>
+<tr class="separator:a6978fcf660d7d52003a21c4d0ccc4c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e2e730cbd6d5873b747928be69b011"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0e2e730cbd6d5873b747928be69b011"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#aa0e2e730cbd6d5873b747928be69b011">addDependency</a> ()</td></tr>
 <tr class="memdesc:aa0e2e730cbd6d5873b747928be69b011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments number of references. <br /></td></tr>
@@ -218,13 +226,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:acb939840237b8d5d3f1ccd83fd76df88 inherit pro_methods_class_o_s_r_e_1_1_common_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor with the name of the object.  <a href="#acb939840237b8d5d3f1ccd83fd76df88">More...</a><br /></td></tr>
 <tr class="separator:acb939840237b8d5d3f1ccd83fd76df88 inherit pro_methods_class_o_s_r_e_1_1_common_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This abstract interface-class declares a task. Tasks can be used to handle several component jobs like streaming resource loader requests or the rendering. A task can work as a sequence. Then he will be started in the main thread context. Or the task can be started in a separate thread. You can install an own thread instance as well. To implement the behavior of the task you can install event-handlers. Each event with its data will be managed by a task job. TaskJobs will be queued and handled one after another. You can specify your own setup-method, if you want to add your own setup code. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="aac8beb16e508f9fc473921c53c3e5b69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum OSRE::Threading::AbstractTask::BufferMode</td>
+          <td class="memname">enum <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#aac8beb16e508f9fc473921c53c3e5b69">OSRE::Threading::AbstractTask::BufferMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -246,7 +256,7 @@ Protected Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum OSRE::Threading::AbstractTask::WorkingMode</td>
+          <td class="memname">enum <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#aad44cdf1f283906fa5357befe9606b8c">OSRE::Threading::AbstractTask::WorkingMode</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -661,7 +671,7 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/projects/osre/include/osre/Threading/<a class="el" href="../../da/d22/_abstract_task_8h_source.html">AbstractTask.h</a></li>
+<li>D:/projects/osre_doc/include/osre/Threading/<a class="el" href="../../da/d22/_abstract_task_8h_source.html">AbstractTask.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

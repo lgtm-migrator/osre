@@ -51,6 +51,5 @@ var searchData=
   ['_7etrackball',['~TrackBall',['../d9/de7/class_o_s_r_e_1_1_scene_1_1_track_ball.html#a35555fc18622d07c2152ac1b628abb9f',1,'OSRE::Scene::TrackBall']]],
   ['_7etvector2',['~TVector2',['../d7/d1a/class_o_s_r_e_1_1_math_1_1_t_vector2.html#a9a05a5c1844fc13ae16fd312f1d2c64e',1,'OSRE::Math::TVector2']]],
   ['_7etvector3',['~TVector3',['../db/dd2/class_o_s_r_e_1_1_math_1_1_t_vector3.html#a54b9ec77911c11f0caf0a18783844f56',1,'OSRE::Math::TVector3']]],
-  ['_7etvector4',['~TVector4',['../d0/dd3/class_z_f_x_c_e2_1_1_math_1_1_t_vector4.html#acae3feadb6bb3b8f959724347af24055',1,'ZFXCE2::Math::TVector4']]],
   ['_7euri',['~Uri',['../d5/d38/class_o_s_r_e_1_1_i_o_1_1_uri.html#a1f6d3c10ae9282005bdbfc734a6e7517',1,'OSRE::IO::Uri']]]
 ];

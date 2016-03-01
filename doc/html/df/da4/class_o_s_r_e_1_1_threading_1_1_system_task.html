@@ -98,14 +98,19 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <div class="title">OSRE::Threading::SystemTask Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class implements a system task.  
+ <a href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../db/dba/_system_task_8h_source.html">SystemTask.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for OSRE::Threading::SystemTask:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.png" usemap="#OSRE::Threading::SystemTask_map" alt=""/>
   <map id="OSRE::Threading::SystemTask_map" name="OSRE::Threading::SystemTask_map">
-<area href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" alt="OSRE::Threading::AbstractTask" shape="rect" coords="0,56,188,80"/>
-<area href="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.html" alt="OSRE::Common::Object" shape="rect" coords="0,0,188,24"/>
+<area href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik..." alt="OSRE::Threading::AbstractTask" shape="rect" coords="0,56,188,80"/>
+<area href="../../d2/d97/class_o_s_r_e_1_1_common_1_1_object.html" title="This base-class implements a simple reference counting. To get an ownership call get, to release it call release. Objects with a reference count of 0 will be destroyed. You can assign an object name to the instance. " alt="OSRE::Common::Object" shape="rect" coords="0,0,188,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -141,9 +146,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d1464f46f78a48ce2a137f360ce5586"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#a0d1464f46f78a48ce2a137f360ce5586">onUpdate</a> ()</td></tr>
 <tr class="memdesc:a0d1464f46f78a48ce2a137f360ce5586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwritten,.  <a href="#a0d1464f46f78a48ce2a137f360ce5586">More...</a><br /></td></tr>
 <tr class="separator:a0d1464f46f78a48ce2a137f360ce5586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a925691d94fb68258ea0f9b393df9a30f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#a925691d94fb68258ea0f9b393df9a30f">await</a> ()</td></tr>
-<tr class="memdesc:a925691d94fb68258ea0f9b393df9a30f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwritten,.  <a href="#a925691d94fb68258ea0f9b393df9a30f">More...</a><br /></td></tr>
-<tr class="separator:a925691d94fb68258ea0f9b393df9a30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61e8c4c286aa6c4ce4a2de5884349e7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#ad61e8c4c286aa6c4ce4a2de5884349e7">awaitUpdate</a> ()</td></tr>
+<tr class="memdesc:ad61e8c4c286aa6c4ce4a2de5884349e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwritten,.  <a href="#ad61e8c4c286aa6c4ce4a2de5884349e7">More...</a><br /></td></tr>
+<tr class="separator:ad61e8c4c286aa6c4ce4a2de5884349e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af50668de83b19e37210dd87eb6ab7262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af50668de83b19e37210dd87eb6ab7262"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>awaitStop</b> ()</td></tr>
+<tr class="separator:af50668de83b19e37210dd87eb6ab7262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae26da774fb460becca985ab016623b82"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da4/class_o_s_r_e_1_1_threading_1_1_system_task.html#ae26da774fb460becca985ab016623b82">attachEventHandler</a> (<a class="el" href="../../d8/d7e/class_o_s_r_e_1_1_common_1_1_abstract_event_handler.html">Common::AbstractEventHandler</a> *pEventHandler)</td></tr>
 <tr class="memdesc:ae26da774fb460becca985ab016623b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">An event handler will be attached.  <a href="#ae26da774fb460becca985ab016623b82">More...</a><br /></td></tr>
 <tr class="separator:ae26da774fb460becca985ab016623b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,7 +273,10 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr class="separator:aac8beb16e508f9fc473921c53c3e5b69 inherit pub_types_class_o_s_r_e_1_1_threading_1_1_abstract_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class implements a system task. </p>
+<p>You can use a system task for a running service like an IO-task waiting in the background for any loader jobs. The system-task will run all the time after starting it and awaits jobs. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae069bf0b838f3885f38fa09adc960b82"></a>
 <div class="memitem">
 <div class="memproto">
@@ -331,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a925691d94fb68258ea0f9b393df9a30f"></a>
+<a class="anchor" id="ad61e8c4c286aa6c4ce4a2de5884349e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -339,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void OSRE::Threading::SystemTask::await </td>
+          <td class="memname">virtual void OSRE::Threading::SystemTask::awaitUpdate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -353,9 +364,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
-<p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#af16d386ff7a4bccd28a40ecec672865e">OSRE::Threading::AbstractTask</a>.</p>
+<p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#ae914ed635e1736901d91a41daa20725e">OSRE::Threading::AbstractTask</a>.</p>
 
 </div>
 </div>
@@ -381,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 <p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#a6d54779d97e7329ca2a414f5070cac1d">OSRE::Threading::AbstractTask</a>.</p>
 
@@ -463,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 <p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#a1c0042b6538da902b3e75707868518c3">OSRE::Threading::AbstractTask</a>.</p>
 
@@ -491,7 +502,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 </div>
 </div>
@@ -517,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 <p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#a2f2cde1212ec184a296f6452ef2087a1">OSRE::Threading::AbstractTask</a>.</p>
 
@@ -624,7 +635,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 <p>Implements <a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html#abb03fd5a080c1632d13bd9280d80a18a">OSRE::Threading::AbstractTask</a>.</p>
 
@@ -653,7 +664,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a> for more info's. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a> for more info's. </dd></dl>
 
 </div>
 </div>
@@ -680,7 +691,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 </div>
 </div>
@@ -706,12 +717,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Overwritten,. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html">AbstractTask</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d56/class_o_s_r_e_1_1_threading_1_1_abstract_task.html" title="This abstract interface-class declares a task. Tasks can be used to handle several component jobs lik...">AbstractTask</a>. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/projects/osre/include/osre/Threading/<a class="el" href="../../db/dba/_system_task_8h_source.html">SystemTask.h</a></li>
+<li>D:/projects/osre_doc/include/osre/Threading/<a class="el" href="../../db/dba/_system_task_8h_source.html">SystemTask.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
