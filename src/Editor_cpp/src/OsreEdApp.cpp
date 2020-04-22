@@ -38,6 +38,7 @@ bool OsreEdApp::onCreate() {
     m_logPanel = new UI::Panel("log_panel", m_mainPanel);
     m_logPanel->setHeadline("Log");
     m_logPanel->setRect(r.getX1() + HorizontalMargin, r.getY1() + r.getHeight() / 3, r.getWidth() - 2 * HorizontalMargin, r.getHeight() - (r.getY1() + r.getHeight() / 3)-2*VerticalMargin);
+    
     m_modelPanel = new UI::Panel("model_panel", m_mainPanel);
     m_modelPanel->setHeadline("Model");
 

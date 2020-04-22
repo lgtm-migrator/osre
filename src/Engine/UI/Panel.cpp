@@ -20,15 +20,15 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -----------------------------------------------------------------------------------------------*/
-#include <osre/UI/Panel.h>
-#include <osre/RenderBackend/RenderCommon.h>
 #include <osre/RenderBackend/RenderBackendService.h>
+#include <osre/RenderBackend/RenderCommon.h>
 #include <osre/Scene/MaterialBuilder.h>
+#include <osre/UI/Panel.h>
 
 #include "UIRenderUtils.h"
 
 #ifndef GLM_ENABLE_EXPERIMENTAL
-#   define GLM_ENABLE_EXPERIMENTAL
+#    define GLM_ENABLE_EXPERIMENTAL
 #endif // GLM_ENABLE_EXPERIMENTAL
 
 #include <GL/glew.h>
@@ -40,11 +40,11 @@ namespace UI {
 
 using namespace ::OSRE::RenderBackend;
 
-Panel::Panel( const String &name, Widget *parent )
-: Widget( name, parent )
-, m_angle( 0.02f )
-, m_headline()
-, m_transformMatrix() {
+Panel::Panel(const String &name, Widget *parent) :
+        Widget(name, parent),
+        m_angle(0.02f),
+        m_headline(),
+        m_transformMatrix() {
     // empty
 }
 
@@ -52,8 +52,8 @@ Panel::~Panel() {
     // empty
 }
 
-void Panel::setHeadline( const String &headline ) {
-    if ( m_headline != headline ) {
+void Panel::setHeadline(const String &headline) {
+    if (m_headline != headline) {
         m_headline = headline;
         Widget::requestLayouting();
         Widget::requestRedraw();
@@ -65,17 +65,16 @@ const String &Panel::getHeadline() const {
 }
 
 void Panel::onLayout() {
-
 }
 
-void Panel::onRender( UiRenderCmdCache &renderCmdCache, RenderBackendService* ) {
+void Panel::onRender(UiRenderCmdCache &renderCmdCache, RenderBackendService *) {
     const Style &activeStyle = StyleProvider::getCurrentStyle();
-    const Rect2ui &rect( getRect() );
+    const Rect2ui &rect(getRect());
 
     const size_t startIndex = renderCmdCache.m_ic.numIndices();
-    UIRenderUtils::drawRectFromStyle( rect, activeStyle, renderCmdCache.m_vc, renderCmdCache.m_ic, Widget::getStackIndex(), WidgetType::Panel );
+    UIRenderUtils::drawRectFromStyle(rect, activeStyle, renderCmdCache.m_vc, renderCmdCache.m_ic, Widget::getStackIndex(), WidgetType::Panel);
 
-    UiRenderCmd *cmd( new UiRenderCmd );
+    UiRenderCmd *cmd(new UiRenderCmd);
 
     cmd->m_startIndex = startIndex;
     cmd->m_numIndices = renderCmdCache.m_ic.numIndices() - startIndex;
