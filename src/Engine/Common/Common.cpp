@@ -36,16 +36,22 @@ void MemoryStatistics::addAllocated( size_t allocSize ) {
     sActiveAllocs++;
     sAllocated += allocSize;
 }
+
 void MemoryStatistics::releaseAlloc() {
     sActiveAllocs--;
 }
 
 void MemoryStatistics::showStatistics() {
-    osre_info(Tag, "Memory-Statistics\n=================");
+#ifdef _DEBUG
+    const String message = "\n\tMemory-Statistics\n\t=================\n";
+
     std::stringstream stream;
     stream << "\nSum Allocs      : " << sNumNew << "\n";
     stream << "Number of leaks : " << sActiveAllocs << "\n";
-    osre_info(Tag, stream.str());
+    osre_info(Tag, message + stream.str());
+#else
+    osre_info(Tag, "No memory statistics");
+#endif
 }
 
 }
