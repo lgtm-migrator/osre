@@ -183,7 +183,9 @@ bool AppBase::destroy() {
 }
 
 void AppBase::update() {
-    if (mAppState == State::Created) {
+    osre_assert2(mAppState == State::Created, "Creation missing.");
+
+    if (mAppState != State::Created) {
         mAppState = State::Running;
     }
     
