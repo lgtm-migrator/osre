@@ -2,7 +2,7 @@ title: Osre
 description: An open source render engine
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-architect
 
 gems:
   - jekyll-mentions
